@@ -1,0 +1,18 @@
+# Ignore Terraform state & plan files
+*.tfstate
+*.tfstate.*
+crash.log
+*.tfplan
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+
+# Ignore service account JSON key (NEVER commit this!)
+*.json
+
+# Ignore system files
+.DS_Store
+*.log
+
+# Ignore VS Code settings
+.vscode/
