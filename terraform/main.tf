@@ -17,6 +17,9 @@ module "eks" {
   subnet_ids      = var.subnet_ids
   vpc_id          = var.vpc_id
 
+  cluster_endpoint_public_access  = true   
+  cluster_endpoint_private_access = false
+
   eks_managed_node_groups = {
     default = {
       desired_size   = var.desired_size
